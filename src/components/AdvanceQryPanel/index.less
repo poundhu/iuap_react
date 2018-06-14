@@ -1,0 +1,60 @@
+@import '../../utils/variables.less';
+@import '../../static/font/iconfont.css';
+.u-modal .u-modal-body{
+    min-height: 64px;
+}
+
+.more-header-filter {
+    background-color: @w-color;
+	border: none;
+    border-radius: 3px 3px 0 0;
+    
+    display: flex;
+    align-items: center;
+    height: 50px;
+    line-height: 50px;
+    .filter-item {
+        position: relative;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        &:first-child {
+            margin-left: 20px;			
+        }
+        .icon-canzhao {
+            right: 0;
+        }
+        div {
+            display: inline-block;
+        }
+    }
+    .u-form-control {
+        width: 170px ;
+        height: 28px !important;	
+    }
+    //显示停用复选框（调整Checkbox默认样式）
+    .u-checkbox .u-checkbox-label {
+        padding-left: 18px;
+        color:black;
+    }
+    .u-checkbox .u-checkbox-label:after, .u-checkbox .u-checkbox-label:before {
+        width: 16px;
+        height: 16px;
+        top: 17px; 
+    }
+    // 搜索框
+    .search-box {
+        width: 170px !important;			
+    }
+    .header-btn-item {
+        display: inline-block;
+        height: 28px;
+        width: 80px;
+        border-radius: 3px !important;
+        font-size: 12px;
+        padding: 0 !important;
+        margin-left: 10px;
+        border: none;
+        color: @w-color;
+    }
+}
